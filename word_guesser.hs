@@ -27,7 +27,6 @@ main = do
     commonWords <- linesVector commonFilePath
     scrabbleWords <- linesSet scrabbleFilePath
     playGame commonWords scrabbleWords
-    return ()
 
 playGame :: Vector Text -> Set Text -> IO ()
 playGame commonWords scrabbleWords = do
